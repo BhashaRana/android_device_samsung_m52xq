@@ -19,3 +19,6 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.l
 
 # Inherit the proprietary files
 include vendor/samsung/m52xq/BoardConfigVendor.mk
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
