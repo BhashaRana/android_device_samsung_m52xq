@@ -335,17 +335,7 @@ vendor/lib64/libvpptestutils.so
 
 # Media-Hardware
 vendor/lib/libc2dcolorconvert.so
-vendor/lib/libOmxAacEnc.so
-vendor/lib/libOmxAmrEnc.so
-vendor/lib/libOmxEvrcEnc.so
-vendor/lib/libOmxG711Enc.so
-vendor/lib/libOmxQcelp13Enc.so
 vendor/lib64/libc2dcolorconvert.so
-vendor/lib64/libOmxAacEnc.so
-vendor/lib64/libOmxAmrEnc.so
-vendor/lib64/libOmxEvrcEnc.so
-vendor/lib64/libOmxG711Enc.so
-vendor/lib64/libOmxQcelp13Enc.so
 
 # NFC
 vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
@@ -358,8 +348,6 @@ vendor/etc/powerhint.xml
 # Perf-IOP
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-
-# Postprocessing
 
 # QMI
 vendor/bin/pd-mapper
