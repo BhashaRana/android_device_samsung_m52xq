@@ -17,17 +17,11 @@ vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
-vendor/lib/libtinycompress.so
-vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libaudiosaplus_sec.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
-vendor/lib64/libtinycompress.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
-vendor/lib64/soundfx/libaudiosaplus_sec.so
 
 # Audio-ACDB
 vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
@@ -41,9 +35,6 @@ vendor/etc/audconf/OPEN/workspaceFile.qwsp
 
 # Audio-Hardware
 vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libvolumelistener.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
 
 # Bluetooth
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -300,11 +291,9 @@ vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.lahaina.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs.so
-vendor/lib64/hw/sound_trigger.primary.lahaina.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs.so
@@ -404,14 +393,12 @@ vendor/lib/libLocalTM_wrapper.camera.samsung.so
 vendor/lib/libSceneDetector_v1.camera.samsung.so
 vendor/lib/libsrib_CNNInterface.camera.samsung.so
 vendor/lib/libsrib_videobokeh_engine.camera.samsung.so
-vendor/lib/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/hw/vendor.samsung.hardware.snap@1.2-impl.so
 vendor/lib64/libLocalTM_capture_core.camera.samsung.so
 vendor/lib64/libLocalTM_wrapper.camera.samsung.so
 vendor/lib64/libSceneDetector_v1.camera.samsung.so
 vendor/lib64/libsrib_CNNInterface.camera.samsung.so
 vendor/lib64/libsrib_videobokeh_engine.camera.samsung.so
-vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 
 # Sensor-configs
 vendor/etc/sensors/config/kodiak_ak991x_0.json
@@ -555,7 +542,6 @@ vendor/lib/libshotsuggestion_engines.so
 vendor/lib/libsnaace.so
 vendor/lib/libsnapdragoncolor-manager.so
 vendor/lib/libsndmonitor.so
-vendor/lib/libspeakercalibration.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssengine.uniplugin@1.0.so
 vendor/lib/libSSMAutoTrigger_interface.so
@@ -567,7 +553,6 @@ vendor/lib/libucm_tlc_direct_comm.so
 vendor/lib/libucm_tlc_tz_esecomm.so
 vendor/lib/libwifi-hal.so
 vendor/lib/libwpa_drv_oem.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib/unihal_main@2.1.so
 vendor/lib/vndk/libstagefright_omx_utils.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -639,7 +624,6 @@ vendor/lib64/libsnaace.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnap_compute.so
 vendor/lib64/libsnap_compute_wrapper.so
-vendor/lib64/libspeakercalibration.so
 vendor/lib64/libssengine.uniplugin@1.0.so
 vendor/lib64/libSSMAutoTrigger_interface.so
 vendor/lib64/libsuper_night_interface.so
@@ -651,5 +635,4 @@ vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
 vendor/lib64/libwpa_drv_oem.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/soundfx/libswdap.so
 vendor/lib64/unihal_main@2.1.so
