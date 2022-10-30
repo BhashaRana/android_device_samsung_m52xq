@@ -556,6 +556,7 @@ vendor/lib/libwpa_drv_oem.so
 vendor/lib/unihal_main@2.1.so
 vendor/lib/vndk/libstagefright_omx_utils.so
 vendor/lib64/com.qti.chiusecaseselector.so
+vendor/lib/libspeakercalibration.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
 vendor/lib64/com.qti.feature2.derivedoffline.so
@@ -633,6 +634,7 @@ vendor/lib64/libucm_tlc_direct_comm.so
 vendor/lib64/libucm_tlc_tz_esecomm.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
+vendor/lib64/libspeakercalibration.so
 vendor/lib64/libwpa_drv_oem.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/unihal_main@2.1.so
