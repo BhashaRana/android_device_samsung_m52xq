@@ -14,9 +14,6 @@ TARGET_SCREEN_DENSITY := 420
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/mesa_m52xq_swa_ins_defconfig
 
-# Kernel modules
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
-
 # Inherit the proprietary files
 include vendor/samsung/m52xq/BoardConfigVendor.mk
 
