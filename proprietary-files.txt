@@ -215,7 +215,10 @@ vendor/etc/qdcm_calib_data_ss_dsi_panel_SW83109_BF067XMM_FHD.xml
 vendor/etc/dolby/dax-default.xml
 
 # Fingerprint
-vendor/lib/hw/fingerprint.default.so
+vendor/lib/libbauthserver.so
+vendor/lib64/libbauthserver.so
+vendor/lib/libbauthtzcommon.so
+vendor/lib64/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 
@@ -506,8 +509,6 @@ vendor/lib/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libbatterylistener.so
-vendor/lib/libbauthserver.so
-vendor/lib/libbauthtzcommon.so
 vendor/lib/libchilog.so
 vendor/lib/libcirrusspkrprot.so
 vendor/lib/libcomprcapture.so
@@ -590,8 +591,6 @@ vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libbauthserver.so
-vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libchilog.so
 vendor/lib64/libdk_vnd_service_core.so
 vendor/lib64/libengmode15.so
