@@ -120,61 +120,6 @@ on boot
     chmod 0664 /dev/cpuset/moderate/tasks
     chmod 0664 /dev/cpuset/moderate/cpus
 
-# SWAP
-on boot
-    write /proc/sys/vm/swappiness 130
-    write /proc/sys/vm/page-cluster 0
-
-# Pageboostd
-on property:sys.boot_completed=1
-    start pageboostd
-service pageboostd /system/bin/pageboostd
-    class main
-    user system
-    group system mount radio net_bt sdcard_rw shell media media_rw
-    socket pageboostd seqpacket 0660 system system
-    disabled
-
-# HEIMDALL
-on early-init
-    chmod 0777 /dev/memcg
-    chown system system /dev/memcg
-    chown system system /dev/memcg/cgroup.procs
-
-service heimdalld /system/bin/heimdalld
-    class core
-    user system
-    group system readproc
-    capabilities NET_ADMIN SYS_NICE KILL CHOWN
-    socket heimdalld seqpacket 0660 system system
-    oneshot
-
-# SSU (Samsung SIM Unlock)
-on property:ro.boot.carrierid=VZW
-    setprop ssu.support 1
-on property:ro.boot.carrierid=CCT
-    setprop ssu.support 1
-on property:ro.boot.carrierid=TMB
-    setprop ssu.support 1
-on property:ro.boot.carrierid=TMK
-    setprop ssu.support 1
-on property:ro.boot.carrierid=USC
-    setprop ssu.support 1
-
-# some priv-apps of SPR bind mount to TMB priv-apps
-on post-fs-data && property:ro.csc.sales_code=TMB
-    umount /system/carrier
-    mkdir /mnt/temp
-    mount none /system/carrier/SPR /mnt/temp bind
-    mount none /system/carrier/TMB /system/carrier bind
-    mount none /mnt/temp/priv-app/MobileID /system/carrier/priv-app/MobileID bind
-    mount none /mnt/temp/priv-app/CarrierDeviceManager /system/carrier/priv-app/CarrierDeviceManager bind
-    mount none /mnt/temp/priv-app/MobileInstaller /system/carrier/priv-app/MobileInstaller bind
-    mount none /mnt/temp/priv-app/SprintAndroidExtension2 /system/carrier/priv-app/SprintAndroidExtension2 bind
-    mount none /mnt/temp/priv-app/SprintHub /system/carrier/priv-app/SprintHub bind
-    umount /mnt/temp
-    rmdir /mnt/temp
-
 on property:sys.sysctl.zram_balance_ratio=*
     write /sys/module/zram/parameters/zram_balance_ratio ${sys.sysctl.zram_balance_ratio}
 
