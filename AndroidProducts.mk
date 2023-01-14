@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_m52xq.mk
+    $(LOCAL_DIR)/aosp_m52xq.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_m52xq-user \
-    lineage_m52xq-userdebug \
-    lineage_m52xq-eng
+    aosp_m52xq-user \
+    aosp_m52xq-userdebug \
+    aosp_m52xq-eng
