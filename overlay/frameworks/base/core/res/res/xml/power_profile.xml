@@ -23,7 +23,7 @@
         <value>4</value>
         <value>3</value>
         <value>1</value>
-    </array>
+	</array>
     <array name="cpu.core_speeds.cluster0">
         <value>300000</value>
         <value>691200</value>
@@ -94,6 +94,7 @@
         <value>299</value>
         <value>337</value>
     </array>
+    <item name="cpu.active">7.6</item>
     <item name="cpu.idle">13</item>
     <item name="cpu.suspend">6</item>
     <array name="memory.bandwidths">
